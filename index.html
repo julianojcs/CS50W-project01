@@ -4,7 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Search</title>
+  <link rel="icon" href="img/favicon.ico" />
   <link rel="stylesheet" href="/style/style.css">
+  <script type="text/javascript">
+  window.onload = function(e) {
+    document.querySelector("#btn_search").addEventListener("click", function(event) {
+      document.querySelector("#google_form").action = "https://google.com/search";
+    }, false);
+    document.querySelector("#btn_doodles").addEventListener("click", function(event) {
+      window.location.replace("https://google.com/doodles");
+    }, false);
+  }
+  </script>
 </head>
 <body>
   <nav>
@@ -23,7 +34,7 @@
       width="272"
     >
   </div>
-  <form action="https://google.com/search" method="GET">
+  <form id="google_form" method="GET">
     <div>
       <div class="svg-img">
         <input type="text" name="q" id="input_search" required>
@@ -34,7 +45,8 @@
         </div>
       </div>
     </div>
-    <input type="submit" value="Google Search" id="btn_search">
+    <input type="submit" class="btn_search" value="Google Search" id="btn_search">
+    <input type="text" class="btn_search" data-action="https://www.google.com/doodles/" value="I'm Feeling Lucky" id="btn_doodles">
   </form>
 </body>
 </html>

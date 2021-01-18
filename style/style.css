@@ -47,7 +47,7 @@ nav ul li a:hover {
 
 div.div-img {
   text-align: center;
-  height: 233px;
+  height: 221px;
 }
 
 div.div-img img {
@@ -313,7 +313,7 @@ div.div-cell span {
   border-radius: 24px;
   z-index: 3;
   height: 44px;
-  margin: 0 auto;
+  margin: 0 auto 1.5rem;
   width: 482px;
   min-width: 50%;
   outline: none;
@@ -328,27 +328,37 @@ div.div-cell span {
           box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
 }
 
-#btn_search {
-  background-color: #4285F4;
-  border: 1px solid #7dadfa;
-  outline-color: #7dadfa;
-  border-radius: 5px;
-  color: #f8f9fa;
+.btn_search {
+  background-image: -webkit-linear-gradient(top, #f8f9fa, #f8f9fa);
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  color: #3c4043;
+  outline-color: #4285F4;
+  outline-width: thin;
+  border-radius: 4px;
   font-family: arial,sans-serif;
-  font-size: 16px;
-  margin: 2rem 0;
-  padding: 0 1rem;
-  height: 3rem;
-  min-width: 5rem;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
   text-align: center;
   cursor: pointer;
-  white-space: pre;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-#btn_search:hover {
-  background-color: #4285F4;
-  -webkit-box-shadow: 1px 1px 2px #888888;
-          box-shadow: 1px 1px 2px #888888;
+.btn_search:hover {
+  border: 1px solid #e0e0e0;
+  -webkit-box-shadow: 0px 1px 0px #e0e0e0;
+          box-shadow: 0px 1px 0px #e0e0e0;
+}
+
+#btn_doodles {
+  width: 110px;
 }
 
 div.svg-img {
