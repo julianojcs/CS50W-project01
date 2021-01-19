@@ -56,8 +56,12 @@ div.div-img img {
 
 div.div-no-img {
   padding: 109px 0 20px;
-  display: block;
-  text-align: -webkit-center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 
