@@ -308,13 +308,11 @@ div.div-cell {
   text-align: center;
   cursor: pointer;
   user-select: none;
+  transition: box-shadow 250ms ease, border 250ms ease;
 }
 .btn_search:hover {
   border: 1px solid rgb(224, 224, 224);
   box-shadow: 0px 1px 0px rgb(224, 224, 224);
-}
-#btn_doodles {
-  width: 110px;
 }
 
 div.svg-img {
@@ -345,7 +343,6 @@ div.svg-img {
   padding: 0 12px;
   box-shadow: none;
   background-color: #4d90fe;
-  background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
   border: 1px solid #3079ed;
   color: #fff;
   border-radius: 2px;
@@ -355,10 +352,12 @@ div.svg-img {
   text-align: center;
   white-space: nowrap;
   outline: 0;
+  transition: border 250ms ease;
 }
 #btn_adv_search:hover {
-  background-color: #205dbe;
-  border: 1px solid #1c3b6d;
+  background-image: linear-gradient(to bottom,#4d90fe,#4787ed);
+  // background: #4787ed;
+  border: 1px solid #205dbe;
 }
 
 .div-btn {

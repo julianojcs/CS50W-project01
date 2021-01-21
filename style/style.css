@@ -353,16 +353,16 @@ div.div-cell span {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-transition: border 250ms ease, -webkit-box-shadow 250ms ease;
+  transition: border 250ms ease, -webkit-box-shadow 250ms ease;
+  transition: box-shadow 250ms ease, border 250ms ease;
+  transition: box-shadow 250ms ease, border 250ms ease, -webkit-box-shadow 250ms ease;
 }
 
 .btn_search:hover {
   border: 1px solid #e0e0e0;
   -webkit-box-shadow: 0px 1px 0px #e0e0e0;
           box-shadow: 0px 1px 0px #e0e0e0;
-}
-
-#btn_doodles {
-  width: 110px;
 }
 
 div.svg-img {
@@ -398,7 +398,6 @@ div.svg-img div {
   -webkit-box-shadow: none;
           box-shadow: none;
   background-color: #4d90fe;
-  background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
   border: 1px solid #3079ed;
   color: #fff;
   border-radius: 2px;
@@ -408,11 +407,14 @@ div.svg-img div {
   text-align: center;
   white-space: nowrap;
   outline: 0;
+  -webkit-transition: border 250ms ease;
+  transition: border 250ms ease;
 }
 
 #btn_adv_search:hover {
-  background-color: #205dbe;
-  border: 1px solid #1c3b6d;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4d90fe), to(#4787ed));
+  background-image: linear-gradient(to bottom, #4d90fe, #4787ed);
+  border: 1px solid #205dbe;
 }
 
 .div-btn {
